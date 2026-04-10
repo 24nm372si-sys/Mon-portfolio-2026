@@ -187,6 +187,8 @@ section
  .competences table tbody tr:hover{
     background-color: #FDFDFD;
  }
+
+
  .competences table  thead th {
 text-align: left;
  }
@@ -198,7 +200,7 @@ text-align: left;
  }
  footer p{
     color: white;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.2rem; 
  }
     footer a{
         display: inline-block;
@@ -211,4 +213,3 @@ footer a :hover{
     color:var(--orange-vif)
     transform: translate(-3px);
 }
- j

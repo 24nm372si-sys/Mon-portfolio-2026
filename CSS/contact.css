@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #5a54ff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav a.active {
+    color: #5a54ff;
+    border-bottom: 2px solid #5a54ff;
+}
+
+/* SECTION */
+.contact {
+    padding: 60px;
+    text-align: center;
+}
+
+.contact h1 {
+    color: #5a54ff;
+    font-size: 32px;
+}
+
+.contact h3 {
+    background-color: var(--violet-doux);
+}
+
+.intro {
+    margin: 10px 0 40px;
+    color: #555;
+}
+
+/* CONTAINER */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* INFO */
+.info {
+    background: linear-gradient(135deg, #5a54ff, #7b6cff);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    color: white;
+}
+
+.info h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.info p {
+    margin: 15px 0;
+    color: white;
+}
+
+.info i {
+    color: white;
+    margin-right: 10px;
+}
+
+/* SOCIALS */
+.info .socials a {
+    margin-right: 10px;
+    font-size: 20px;
+    color: white;
+    transition: 0.3s;
+}
+
+.info .socials a:hover {
+    opacity: 0.7;
+}
+
+/* FORM */
+.form {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.form h2 {
+    margin-bottom: 20px;
+    color: #5a54ff;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+/* BUTTON */
+.form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #5a54ff;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form button:hover {
+    background: #433dff;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(90deg, #5a54ff, #7b6cff);
+    color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Texte disponibilité */
+.dispo {
+    margin-top: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Réseaux sociaux améliorés */
+.info .socials {
+    margin-top: 20px;
+}
+
+.info .socials a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 22px;
+    color: white;
+    transition: 0.3s;
+}
+
+/* Effet hover stylé */
+.info .socials a:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
